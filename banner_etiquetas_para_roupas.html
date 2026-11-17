@@ -1,466 +1,871 @@
-<div class="banner-etiquetas">
+<html>
+  <head></head>
+  <div cz-shortcut-listen="true">
+    <div class="mn_banner_labels">
+        <!-- Fundo -->
+        <img class="mn_banner_background" src="/wp-content/uploads/2026/11/banner_roupa_fundo_2026.png" alt="" />
 
-    <!-- Fundo -->
-    <img
-        class="banner-fundo"
-        src="/wp-content/uploads/2026/11/banner_roupa_fundo_2026.png"
-        alt=""
-    >
+        <!-- Conteudo principal -->
+        <div class="mn_banner_content">
 
-    <!-- Conteúdo principal -->
-    <div class="banner-conteudo">
+            <div class="mn_content_left">
+                <div class="mn_banner_cloud_1">
+                    <img class="mn_cloud1" src="/wp-content/uploads/2026/11/banner_roupa_nuvens_2026.png" alt="" />
+                </div>
 
-        <div class="banner-nuvem-1">
-            <img class="produto-meia" src="/wp-content/uploads/2026/11/banner_roupa_nuvens_2026.png" alt="">
-        </div>
-
-        <div class="banner-pano">
-            <img class="produto-toalha" src="/wp-content/uploads/2026/11/banner_roupa_pano_2026.png" alt="">
-        </div>
-
-        <!-- Título -->
-        <div class="banner-titulo">
-            <img src="/wp-content/uploads/2026/11/banner_roupa_texto_2026.png" alt="Etiquetas para roupas">
-        </div>
-
-        <!-- Benefícios -->
-        <div class="banner-beneficios">
-
-            <div class="beneficio">
-                <img src="/wp-content/uploads/2026/11/banner_roupa_lava-roupas_2026.png" alt="">
+                <div class="mn_banner_sheet">
+                    <img class="mn_sheet" src="/wp-content/uploads/2026/11/banner_roupa_pano_2026.png" alt="" />
+                </div>
             </div>
 
-            <div class="beneficio">
-                <img src="/wp-content/uploads/2026/11/banner_roupa_facil-de-aplicar_2026.png" alt="">
+            <!-- Titulo -->
+            <div class="mn_banner_title">
+                <img class="mn_text_img_desktop" src="/wp-content/uploads/2026/11/banner_roupa_texto_2026.png" alt="Etiquetas para roupas" />
+				<img class="mn_text_img_mobile" src="/wp-content/uploads/2026/11/banner_roupa_texto-centralizado_2026.png" alt="Etiquetas para roupas" />
             </div>
 
-            <div class="beneficio">
-                <img src="/wp-content/uploads/2026/11/banner_roupa_suave-ao-toque_2026.png" alt="">
+            <!-- Qualidades -->
+            <div class="mn_qualities_content">
+                <div class="mn_quality_1">
+                    <img src="/wp-content/uploads/2026/11/banner_lava-roupas_2026.png" alt="" />
+                </div>
+
+                <div class="mn_quality_2">
+                    <img src="/wp-content/uploads/2026/11/banner_facil-de-aplicar_2026.png" alt="" />
+                </div>
+
+                <div class="mn_quality_3">
+                    <img src="/wp-content/uploads/2026/11/banner_suave-ao-toque_2026.png" alt="" />
+                </div>
+            </div>
+
+            <!-- Produtos -->
+            <div class="mn_banner_products">
+                <img class="mn_product_shirt" src="/wp-content/uploads/2026/11/banner_roupa_blusa_2026.png" alt="" />
+
+                <img class="mn_product_sock" src="/wp-content/uploads/2026/11/banner_roupa_meia_2026.png" alt="" />
+
+                <div class="mn_banner_cloud_2">
+                    <img class="mn_cloud2" src="/wp-content/uploads/2026/11/banner_roupa_nuvens_2026.png" alt="" />
+                </div>
             </div>
 
         </div>
-
     </div>
 
-    <!-- Produtos -->
-    <div class="banner-produtos">
-
-        <img class="produto-camisa" src="/wp-content/uploads/2026/11/banner_roupa_blusa_2026.png" alt="">
-
-        <img class="produto-meia" src="/wp-content/uploads/2026/11/banner_roupa_meia_2026.png" alt="">
-
-    </div>
-
-    <div class="banner-nuvem-2">
-        <img class="produto-meia" src="/wp-content/uploads/2026/11/banner_roupa_nuvens_2026.png" alt="">
-    </div>
-
-</div>
-
-<style>
-#content {
-    padding-top: 0px !important;
-}
-
-.mn_banner_etiqueta_para_roupa {
-    position: relative;
-    width: min(1386px, 100vw);
-    max-width: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    height: 160px;
-}
-
-.banner-etiquetas {
-    position: relative;
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
-}
-
-.banner-fundo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 160px !important;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-conteudo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.banner-nuvem-1 {
-    position: absolute;
-    left: -75px;
-    top: -162px;
-    width: 29%;
-    height: fit-content;
-    z-index: 2;
-}
-
-.banner-nuvem-1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-pano {
-    position: absolute;
-    left: -19px;
-    top: -179px;
-    width: 23%;
-    z-index: 3;
-    transform: rotate(-9deg);
-}
-
-.produto-toalha {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-titulo {
-    position: absolute;
-    left: 24%;
-    width: 18%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 5;
-}
-
-.banner-titulo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-beneficios {
-    position: absolute;
-    left: 43%;
-    width: 24%;
-    height: 100%;
-    display: flex;
-    gap: 1%;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 5;
-}
-
-.banner-beneficios .beneficio {
-    position: relative;
-    width: 22%;
-}
-
-.banner-beneficios .beneficio img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-produtos {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 32%;
-    height: 100%;
-    z-index: 4;
-}
-
-.produto-camisa {
-    position: absolute;
-    right: 75px;
-    top: 9px;
-    width: 58%;
-    height: auto;
-    display: block;
-}
-
-.banner-produtos .produto-meia {
-    position: absolute;
-    right: 10%;
-    bottom: -37px;
-    width: 34%;
-    height: auto;
-    display: block;
-    transform: rotate(-13deg);
-}
-
-.banner-nuvem-2 {
-    position: absolute;
-    right: 12px;
-    top: -102%;
-    width: 29%;
-    z-index: 2;
-}
-
-.banner-nuvem-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (min-width: 1100px) and (max-width: 1399px) {
-
-    .mn_banner_etiqueta_para_roupa {
-        width: min(1386px, 99vw);
+    <style>
+    #content {
+        padding-top: 0px !important;
     }
+    @media(width >= 1300px) {
+		.mn_text_img_desktop {
+			display: block;
+		}
+		.mn_text_img_mobile {
+			display: none;
+		}
+        .mn_banner_etiqueta_para_roupa {
+            position: relative;
+            width: min(1386px, 100vw);
+            max-width: none;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 160px;
+        }
+        .mn_banner_background {
+            min-height: 175px;
+        }
+        .mn_banner_labels {
+            display: grid;
+            width: min(1386px, 100vw);
+            margin: 0 auto;
+        }
 
-    .banner-etiquetas {
-        width: 100%;
-        height: 150px;
+        .mn_banner_background,
+        .mn_banner_content {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_background {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mn_banner_content {
+            display: grid;
+            grid-template-columns: 24% 18% 28% 30%;
+            align-self: start;
+            justify-items: center;
+            justify-content: center;
+            height: 175px;
+            overflow: hidden;
+        }
+        .mn_content_left {
+            display: grid;
+            width: 330px;
+        }
+
+        .mn_banner_cloud_1,
+        .mn_banner_sheet {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_cloud_1 {
+            z-index: 1;
+        }
+
+        .mn_banner_sheet {
+            z-index: 2;
+        }
+        .mn_sheet {
+            position: relative;
+            top: -172px;
+            left: -5px;
+            transform: rotate(-7deg);
+        }
+        .mn_cloud1 {
+            transform: scale(1.3);
+            position: relative;
+            top: -124px;
+            left: -52px;
+        }
+        /**/
+        .mn_banner_products {
+            display: grid;
+        }
+
+        .mn_product_shirt,
+        .mn_product_sock,
+        .mn_banner_cloud_2 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+		.mn_banner_cloud_2 {
+			transform: rotatey(180deg);
+			position: relative;
+            top: -131px;
+            left: -10px;
+		}
+
+        .mn_banner_cloud_2 {
+            z-index: 1;
+        }
+
+        .mn_product_sock {
+            z-index: 3;
+        }
+
+        .mn_product_shirt {
+            z-index: 2;
+        }
+        /**/
+        .mn_banner_title {
+            width: 240px;
+        }
+        .mn_banner_title img {
+            width: 240px;
+            position: relative;
+            top: 41px;
+            left: -9px;
+        }
+        /**/
+        .mn_qualities_content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 320px;
+            justify-items: center;
+            position: relative;
+            left: -22px;
+        }
+        .mn_quality_1 {
+            position: relative;
+            top: 16px;
+        }
+        .mn_quality_2 {
+            position: relative;
+            top: 24px;
+        }
+        .mn_quality_3 {
+            position: relative;
+            top: 31px;
+            right: 6%;
+        }
+        /**/
+        .mn_product_sock {
+            width: 210px;
+            position: relative;
+            left: 42%;
+            top: 21px;
+        }
+
+        .mn_product_shirt {
+            width: 322px;
+            position: relative;
+            top: 13px;
+            left: 3%;
+        }
     }
+    @media(width < 1300px) and (width >= 1100px) {
+		.mn_text_img_desktop {
+			display: block;
+		}
+		.mn_text_img_mobile {
+			display: none;
+		}
+        .mn_banner_etiqueta_para_roupa {
+            position: relative;
+            width: min(1386px, 100vw);
+            max-width: none;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 190px;
+        }
+        .mn_banner_background {
+            min-height: 190px;
+        }
+        .mn_banner_labels {
+            display: grid;
+            width: min(1386px, 100vw);
+            margin: 0 auto;
+        }
 
+        .mn_banner_background,
+        .mn_banner_content {
+            grid-column: 1;
+            grid-row: 1;
+        }
 
-    .banner-fundo {
-        width: 100%;
-        height: 150px !important;
-        object-fit: cover;
-        object-position: center;
+        .mn_banner_background {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mn_banner_content {
+            display: grid;
+            grid-template-columns: 24% 18% 28% 30%;
+            align-self: start;
+            justify-items: center;
+            justify-content: center;
+            height: 190px;
+            overflow: hidden;
+        }
+        .mn_content_left {
+            display: grid;
+            width: 330px;
+        }
+
+        .mn_banner_cloud_1,
+        .mn_banner_sheet {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_cloud_1 {
+            z-index: 1;
+        }
+
+        .mn_banner_sheet {
+            z-index: 2;
+        }
+        .mn_sheet {
+            width: 330px;
+            position: relative;
+            top: -182px;
+            left: -28px;
+            transform: scale(1.05) rotate(-8deg);
+        }
+        .mn_cloud1 {
+            position: relative;
+            transform: scale(0.95);
+            top: -30px;
+            left: 20px;
+        }
+        /**/
+        .mn_banner_products {
+            display: grid;
+        }
+
+        .mn_product_shirt,
+        .mn_product_sock,
+        .mn_banner_cloud_2 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        .mn_cloud2 {
+            transform: scale(0.95) rotatey(180deg);
+            position: relative;
+            left: 13px;
+            top: -7px;
+        }
+
+        .mn_banner_cloud_2 {
+            z-index: 1;
+        }
+
+        .mn_product_sock {
+            z-index: 3;
+        }
+
+        .mn_product_shirt {
+            z-index: 2;
+        }
+        /**/
+        .mn_banner_title {
+            width: 265px;
+        }
+        .mn_banner_title img {
+            width: 265px;
+            position: relative;
+            top: 45px;
+            left: -5px;
+        }
+        /**/
+        .mn_qualities_content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 335px;
+            justify-items: center;
+            position: relative;
+            left: 60px;
+        }
+        .mn_quality_1 {
+            position: relative;
+            top: 29px;
+            width: 86px;
+        }
+        .mn_quality_2 {
+            position: relative;
+            top: 36px;
+            left: 4px;
+            width: 82px;
+        }
+        .mn_quality_3 {
+            position: relative;
+            top: 43px;
+            width: 71px;
+        }
+        /**/
+        .mn_product_sock {
+            width: 175px;
+            position: relative;
+            left: 182px;
+            top: 72px;
+        }
+
+        .mn_product_shirt {
+            width: 277px;
+            position: relative;
+            top: 56px;
+            left: 68px;
+        }
     }
+	@media(width < 1100px) and (width >= 900px) {
+		.mn_banner_sheet {
+			display: none;
+		}
+		.mn_text_img_desktop {
+			display: block;
+		}
+		.mn_text_img_mobile {
+			display: none;
+		}
+        .mn_banner_etiqueta_para_roupa {
+            position: relative;
+            width: min(1386px, 100vw);
+            max-width: none;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            height: 235px;
+        }
+        .mn_banner_background {
+            min-height: 235px;
+        }
+        .mn_banner_labels {
+            display: grid;
+            width: min(1386px, 100vw);
+            margin: 0 auto;
+        }
 
-    .banner-pano {
-        left: -10px;
-        top: -130px;
-        width: 23%;
+        .mn_banner_background,
+        .mn_banner_content {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_background {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mn_banner_content {
+            display: grid;
+            grid-template-columns: 24% 18% 28% 30%;
+            align-self: start;
+            justify-items: center;
+            justify-content: center;
+            height: 235px;
+            overflow: hidden;
+        }
+        .mn_content_left {
+            display: grid;
+            width: 330px;
+        }
+
+        .mn_banner_cloud_1 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_cloud_1 {
+            z-index: 1;
+        }
+        .mn_cloud1 {
+            transform: scale(0.82);
+            position: relative;
+            top: -46px;
+            left: 1px;
+        }
+        /**/
+        .mn_banner_products {
+            display: grid;
+        }
+
+        .mn_product_shirt,
+        .mn_product_sock,
+        .mn_banner_cloud_2 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mn_banner_cloud_2 {
+			transform: rotatey(180deg);
+            z-index: 1;
+			position: relative;
+			top: 2px;
+			left: 34px;
+        }
+
+        .mn_product_sock {
+            z-index: 3;
+        }
+
+        .mn_product_shirt {
+            z-index: 2;
+        }
+        /**/
+        .mn_banner_title {
+            width: 265px;
+        }
+        .mn_banner_title img {
+            width: 265px;
+            position: relative;
+            top: 68px;
+            left: -120px;
+        }
+        /**/
+        .mn_qualities_content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 350px;
+			height: 235px;
+			justify-items: center;
+			align-items: center;
+			position: relative;
+        	left: -8px;
+        }
+        .mn_quality_1 {
+            position: relative;
+            left: 18px;
+        }
+        .mn_quality_2 {
+            position: relative;
+            left: 10px;
+            top: 2%;
+        }
+        .mn_quality_3 {
+            position: relative;
+            top: 3%;
+            right: 6%;
+        }
+        /**/
+        .mn_product_sock {
+            width: 203px;
+            position: relative;
+            left: 93px;
+            top: 121px;
+        }
+
+        .mn_product_shirt {
+            width: 300px;
+            transform: scale(1.15);
+            position: relative;
+            top: 55px;
+            left: 55px;
+        }
     }
-
-    .banner-titulo {
-        left: 21%;
-        width: 24%;
-        height: 100%;
-        align-items: center;
+	@media(width < 900px) and (width >= 700px) {
+		.mn_text_img_desktop {
+			display: block;
+		}
+		.mn_text_img_mobile {
+			display: none;
+		}
+        .mn_sheet {
+            display: none;
+        }
+        .mn_banner_etiqueta_para_roupa {
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            height: 233px;
+			overflow: hidden;
+        }
+        .mn_banner_background {
+            height: 233px !important;
+        }
+		.mn_banner_labels {
+			height: 233px;
+			display: grid;
+		}
+		.mn_banner_labels > * {
+			grid-area: 1 / 1;
+		}
+		.mn_banner_content {
+			display: grid;
+            grid-template-columns: 300px 200px 200px;
+            grid-template-rows: 116px 117px;
+            align-content: center;
+			align-items: center;
+			justify-items: center;
+            justify-content: space-around;
+		}
+		.mn_content_left {
+			grid-column: 1;
+			grid-row: 1 / span 2;
+		}
+		.mn_banner_title {
+            width: 235px;
+            grid-column: 2;
+            grid-row: 1;
+            position: relative;
+            left: -195px;
+            top: 1px;
+		}
+		.mn_banner_title img {
+			width: 235px;
+		}
+		.mn_qualities_content {
+			display: grid;
+			grid-auto-flow: column;
+			grid-column: 2;
+			grid-row: 2;
+			width: 300px;
+			align-items: center;
+			justify-content: space-evenly;
+			position: relative;
+			right: 186px;
+			z-index: 1;
+			gap: 30px;
+		}
+		.mn_banner_products {
+			grid-column: 3;
+			grid-row: 1 / span 2;
+		}
+		.mn_quality_1 {
+			width: 77px;
+			position: relative;
+			top: -16px;
+		}
+		.mn_quality_2 {
+			width: 72px;
+			position: relative;
+			top: -12px;
+            left: -3px;
+		}
+		.mn_quality_3 {
+			width: 60px;
+			position: relative;
+			top: -8px;
+            left: -5px;
+		}
+		.mn_banner_products {
+			width: 265px;
+			position: relative;
+			left: 100px;
+        	top: 20px;
+		}
+		.mn_banner_cloud_1 {
+			width: 265px;
+			position: relative;
+			left: -83px;
+			top: -9px;
+		}
+        .mn_cloud1 {
+            max-width: 304px !important;
+            position: relative;
+            top: -13px;
+            left: -111px;
+		}
+		.mn_banner_cloud_2 {
+			transform: rotatey(180deg);
+			position: relative;
+			top: -81px;
+			left: -30px;
+		}
+		.mn_product_shirt {
+            max-width: 310px !important;
+            transform: scale(0.98);
+            position: relative;
+            left: -159px;
+            top: 246px;
+            z-index: 1;
+		}
+		.mn_product_sock {
+            z-index: 2;
+            max-width: 210px !important;
+            position: relative;
+            left: -39px;
+            top: 72px;
+		}
+		.mn_cloud2 {
+            max-width: 305px !important;
+            position: relative;
+            top: -137px;
+            left: 100px;
+		}
+	}
+	@media(width < 700px) and (width >= 500px) {
+		.mn_text_img_desktop {
+			display: block;
+		}
+		.mn_text_img_mobile {
+			display: none;
+		}
+        .mn_sheet, .mn_product_sock {
+            display: none;
+        }
+        .mn_banner_etiqueta_para_roupa {
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            height: 222px;
+			overflow: hidden;
+        }
+        .mn_banner_background {
+            height: 222px !important;
+        }
+		.mn_banner_labels {
+			height: 222px;
+			display: grid;
+		}
+		.mn_banner_labels > * {
+			grid-area: 1 / 1;
+		}
+		.mn_banner_content {
+            display: grid;
+            grid-template-columns: 118px 118px 264px;
+            grid-template-rows: 111px 111px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+		}
+		.mn_content_left {
+			grid-column: 1;
+			grid-row: 1 / span 2;
+		}
+		.mn_banner_title {
+			width: 212px;
+			grid-column: 2;
+			grid-row: 1;
+			position: relative;
+			right: 10px;
+			top: 5px;
+		}
+        .mn_banner_title img {
+            width: 212px;
+        }
+		.mn_qualities_content {
+            display: grid;
+            grid-auto-flow: column;
+            grid-column: 2;
+            grid-row: 2;
+            width: 276px;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            right: -12px;
+            z-index: 1;
+            gap: 30px;
+		}
+		.mn_banner_products {
+			grid-column: 3;
+			grid-row: 1 / span 2;
+		}
+		.mn_quality_1 {
+            width: 71px;
+            position: relative;
+            top: -11px;
+		}
+		.mn_quality_2 {
+            width: 70px;
+            position: relative;
+            top: -10px;
+		}
+		.mn_quality_3 {
+            width: 60px;
+            position: relative;
+            top: -7px;
+            left: -4px;
+		}
+		.mn_banner_products {
+			width: 264px;
+			position: relative;
+			left: 55px;
+        	top: 20px;
+		}
+		.mn_banner_cloud_1 {
+			width: 240px;
+			position: relative;
+            left: -8px;
+			top: -9px;
+		}
+		.mn_banner_cloud_2 {
+            transform: scale(0.9) rotatey(180deg);
+            position: relative;
+            top: -119px;
+            left: 5px;
+		}
+		.mn_product_shirt {
+            max-width: 335px !important;
+            transform: scale(0.84);
+            position: relative;
+            left: 22px;
+            top: 135px;
+            z-index: 1;
+		}
+	}
+    @media(width < 500px) and (width >= 300px) {
+		.mn_text_img_desktop {
+			display: none;
+		}
+		.mn_text_img_mobile {
+			display: block;
+		}
+        .mn_sheet, .mn_product_sock, .mn_product_shirt {
+            display: none;
+        }
+        .mn_banner_etiqueta_para_roupa {
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            height: 205px;
+			overflow: hidden;
+        }
+        .mn_banner_background {
+            height: 205px !important;
+        }
+		.mn_banner_labels {
+			display: grid;
+		}
+		.mn_banner_labels > * {
+			grid-area: 1 / 1;
+		}
+		.mn_banner_content {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: auto auto;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+		}
+		.mn_content_left {
+			grid-column: 1;
+			grid-row: 1 / span 2;
+		}
+		.mn_banner_title {
+			width: 235px;
+			grid-column: 2;
+			grid-row: 1;
+			position: relative;
+        	top: 11px;
+		}
+		.mn_banner_title img {
+			width: 235px;
+		}
+		.mn_qualities_content {
+            display: grid;
+            grid-auto-flow: column;
+            grid-column: 2;
+            grid-row: 2;
+            width: 256px;
+            align-items: center;
+            justify-content: stretch;
+            z-index: 1;
+            justify-items: center;
+		}
+		.mn_banner_products {
+			grid-column: 3;
+			grid-row: 1 / span 2;
+		}
+		.mn_quality_1 {
+			width: 64px;
+			position: relative;
+			top: -12px;
+            left: 2px;
+		}
+		.mn_quality_2 {
+			width: 61px;
+			position: relative;
+			top: -10px;
+            left: -4px;
+		}
+		.mn_quality_3 {
+			width: 52px;
+			position: relative;
+			top: -7px;
+            left: -13px;
+		}
+		.mn_banner_products {
+			width: 205px;
+			position: relative;
+			left: 55px;
+        	top: 20px;
+		}
+		.mn_banner_cloud_1 {
+            width: 205px;
+            position: relative;
+            left: -52px;
+            top: -37px;
+		}
+		.mn_banner_cloud_2 {
+			transform: rotatey(180deg);
+            position: relative;
+            top: -7px;
+            left: -5px;
+		}
     }
-
-    .banner-beneficios {
-        left: 46%;
-        width: 27%;
-        height: 100%;
-        gap: 0;
-        justify-content: space-between;
-        align-items: center;
+    @media(width < 768px) and (width > 767px) {
+        .mn_banner_etiqueta_para_roupa {
+            margin-left: 0;
+        }
     }
-
-    .banner-beneficios .beneficio {
-        width: 30%;
+    @media(width <= 768px) and (width > 767px) {
+        .mn_banner_etiqueta_para_roupa {
+            margin-top: 10px;
+        }
     }
+    </style>
 
-    .banner-produtos {
-        right: 0;
-        top: 0;
-        width: 31%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: 20px;
-        top: 5px;
-        width: 67%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 8%;
-        bottom: -35px;
-        width: 38%;
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -75%;
-        width: 30%;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1099px) {
-    .mn_banner_etiqueta_para_roupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 150px;
-    }
-
-
-    .banner-fundo {
-        width: 100%;
-        height: 150px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .banner-pano,
-    .banner-nuvem-1 {
-        display: none;
-    }
-
-    .banner-titulo {
-        left: 6%;
-        width: 29%;
-        height: 100%;
-        align-items: center;
-    }
-
-    .banner-titulo img {
-        width: 100%;
-    }
-
-    .banner-beneficios {
-        left: 37%;
-        width: 39%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
-    }
-
-    .banner-beneficios .beneficio {
-        width: 28%;
-    }
-
-    .banner-produtos {
-        right: 0;
-        width: 30%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: -5px;
-        top: 5px;
-        width: 82%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 2%;
-        bottom: -30px;
-        width: 45%;
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -55%;
-        width: 30%;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 899px) {
-
-    .mn_banner_etiqueta_para_roupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 220px;
-    }
-
-
-    .banner-fundo {
-        width: 100%;
-        height: 220px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .banner-pano,
-    .banner-nuvem-1 {
-        display: none;
-    }
-
-    .banner-titulo {
-        left: 8%;
-        top: 8%;
-        width: 38%;
-        height: auto;
-        display: block;
-    }
-
-    .banner-titulo img {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-beneficios {
-        left: 7%;
-        top: 52%;
-        width: 52%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 0;
-    }
-
-    .banner-beneficios .beneficio {
-        width: 29%;
-    }
-
-    .banner-beneficios .beneficio img {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-produtos {
-        right: 0;
-        top: 0;
-        width: 48%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: -5px;
-        top: 25px;
-        width: 100%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 3%;
-        bottom: -5px;
-        width: 47%;
-        transform: rotate(-13deg);
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -20%;
-        width: 35%;
-    }
-}
-
-@media (max-width: 699px) {
-
-    .mn_banner_etiqueta_para_roupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 220px;
-    }
-
-    .banner-fundo {
-        width: 100%;
-        height: 220px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-</style>
-
-<script>
-    document.querySelectorAll(".row").forEach(function(row) {
+    <script>
+      document.querySelectorAll(".row").forEach(function (row) {
         const title = row.querySelector(".title-header");
 
         if (title && title.textContent.trim() === "ETIQUETAS PARA ROUPAS") {
-            row.style.display = "none";
+          row.style.display = "none";
         }
-    });
-</script>
+      });
+    </script>
+  </body>
+</html>

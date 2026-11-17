@@ -1,466 +1,169 @@
-<div class="banner-etiquetas">
-
+<div class="mn_banner_labels mn_banner_etiquetas_adesivas">
     <!-- Fundo -->
-    <img
-        class="banner-fundo"
-        src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/1-fundo.png"
-        alt=""
-    >
-
-    <!-- Conteúdo principal -->
-    <div class="banner-conteudo">
-
-        <div class="banner-nuvem-1">
-            <img class="produto-meia" src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/2-nuvens.png" alt="">
+    <img class="mn_banner_background" src="/wp-content/uploads/2026/11/banner_adesivo_fundo_2026.png" alt="" />
+    <!-- Conteudo principal -->
+    <div class="mn_banner_content">
+        <div class="mn_content_left" aria-hidden="true">
+            <img class="mn_left_pencil_case mn_left_primary" src="/wp-content/uploads/2026/11/banner_adesivo_penal_2026.png" alt="" />
+            <img class="mn_left_notebook mn_left_secondary" src="/wp-content/uploads/2026/11/banner_adesivo_caderno_2026.png" alt="" />
         </div>
-
-        <div class="banner-pano">
-            <img class="produto-toalha" src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/7-pano.png" alt="">
+        <!-- Titulo para desktop e celular -->
+        <div class="mn_banner_title">
+            <img class="mn_text_img_desktop" src="/wp-content/uploads/2026/11/banner_adesivo_texto-esquerda_2026.png" alt="Etiquetas Adesivas" />
+            <img class="mn_text_img_mobile" src="/wp-content/uploads/2026/11/banner_adesivo_texto-centro_2026.png" alt="Etiquetas Adesivas" />
         </div>
-
-        <!-- Título -->
-        <div class="banner-titulo">
-            <img src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/3-texto.png" alt="Etiquetas para roupas">
+        <!-- Qualidades -->
+        <div class="mn_qualities_content">
+            <div class="mn_quality_1"><img src="/wp-content/uploads/2026/11/banner_tinta_2026.png" alt="" /></div>
+            <div class="mn_quality_2"><img src="/wp-content/uploads/2026/11/banner_cores_2026.png" alt="" /></div>
+            <div class="mn_quality_3"><img src="/wp-content/uploads/2026/11/banner_a-prova-dagua_2026.png" alt="" /></div>
         </div>
-
-        <!-- Benefícios -->
-        <div class="banner-beneficios">
-
-            <div class="beneficio">
-                <img src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/4-lava-roupas.png" alt="">
-            </div>
-
-            <div class="beneficio">
-                <img src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/5-facil-de-aplicar.png" alt="">
-            </div>
-
-            <div class="beneficio">
-                <img src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/6-suave-ao-toque.png" alt="">
-            </div>
-
+        <!-- Produtos sobrepostos em Grid -->
+        <div class="mn_banner_products" aria-hidden="true">
+            <img class="mn_product_pencil" src="/wp-content/uploads/2026/11/banner_adesivo_lapiseira_2026.png" alt="" />
+            <img class="mn_product_calculator" src="/wp-content/uploads/2026/11/banner_adesivo_calculadora_2026.png" alt="" />
+            <img class="mn_product_lunchbox" src="/wp-content/uploads/2026/11/banner_adesivo_lancheira_2026.png" alt="" />
         </div>
-
     </div>
-
-    <!-- Produtos -->
-    <div class="banner-produtos">
-
-        <img class="produto-camisa" src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/8-blusa.png" alt="">
-
-        <img class="produto-meia" src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/9-meia.png" alt="">
-
-    </div>
-
-    <div class="banner-nuvem-2">
-        <img class="produto-meia" src="https://mndevdavi.meunominho.com.br/wp-content/uploads/2026/08/2-nuvens.png" alt="">
-    </div>
-
 </div>
 
 <style>
-#content {
-    padding-top: 0px !important;
-}
 
-.BannerEtiquetaRoupa {
-    position: relative;
-    width: min(1386px, 100vw);
-    max-width: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    height: 160px;
-}
+    #content { padding-top: 0 !important; }
 
-.banner-etiquetas {
-    position: relative;
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
-}
-
-.banner-fundo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 160px !important;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.banner-conteudo {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.banner-nuvem-1 {
-    position: absolute;
-    left: -75px;
-    top: -162px;
-    width: 29%;
-    height: fit-content;
-    z-index: 2;
-}
-
-.banner-nuvem-1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-pano {
-    position: absolute;
-    left: -19px;
-    top: -179px;
-    width: 23%;
-    z-index: 3;
-    transform: rotate(-9deg);
-}
-
-.produto-toalha {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-titulo {
-    position: absolute;
-    left: 24%;
-    width: 18%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 5;
-}
-
-.banner-titulo img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-beneficios {
-    position: absolute;
-    left: 43%;
-    width: 24%;
-    height: 100%;
-    display: flex;
-    gap: 1%;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 5;
-}
-
-.banner-beneficios .beneficio {
-    position: relative;
-    width: 22%;
-}
-
-.banner-beneficios .beneficio img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner-produtos {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 32%;
-    height: 100%;
-    z-index: 4;
-}
-
-.produto-camisa {
-    position: absolute;
-    right: 75px;
-    top: 9px;
-    width: 58%;
-    height: auto;
-    display: block;
-}
-
-.banner-produtos .produto-meia {
-    position: absolute;
-    right: 10%;
-    bottom: -37px;
-    width: 34%;
-    height: auto;
-    display: block;
-    transform: rotate(-13deg);
-}
-
-.banner-nuvem-2 {
-    position: absolute;
-    right: 12px;
-    top: -102%;
-    width: 29%;
-    z-index: 2;
-}
-
-.banner-nuvem-2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-@media (min-width: 1100px) and (max-width: 1399px) {
-
-    .BannerEtiquetaRoupa {
-        width: min(1386px, 99vw);
+    /* Mesma organizacao do banner de roupas: fundo e conteudo sobrepostos em Grid. */
+    .mn_banner_etiquetas_adesivas {
+        --banner-height: 175px;
+        position: relative;
+        display: grid;
+        width: min(1386px, 100vw);
+        max-width: none;
+        height: var(--banner-height);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        isolation: isolate;
     }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 150px;
+    .mn_banner_etiquetas_adesivas *, .mn_banner_etiquetas_adesivas *::before, .mn_banner_etiquetas_adesivas *::after {
+        box-sizing: border-box;
     }
-
-
-    .banner-fundo {
+    .mn_banner_etiquetas_adesivas img { display: block; height: auto; }
+    .mn_banner_etiquetas_adesivas .mn_banner_background, .mn_banner_etiquetas_adesivas .mn_banner_content { grid-area: 1 / 1; min-width: 0; }
+    .mn_banner_etiquetas_adesivas .mn_banner_background {
         width: 100%;
-        height: 150px !important;
+        height: var(--banner-height) !important;
         object-fit: cover;
         object-position: center;
+        z-index: -1;
     }
-
-    .banner-pano {
-        left: -10px;
-        top: -130px;
-        width: 23%;
-    }
-
-    .banner-titulo {
-        left: 21%;
-        width: 24%;
-        height: 100%;
+    .mn_banner_etiquetas_adesivas .mn_banner_content {
+        display: grid;
+        grid-template-columns: 24% 18% 28% 30%;
+        grid-template-rows: var(--banner-height);
         align-items: center;
+        justify-items: center;
+        height: var(--banner-height);
     }
-
-    .banner-beneficios {
-        left: 46%;
-        width: 27%;
+    .mn_banner_etiquetas_adesivas .mn_content_left, .mn_banner_etiquetas_adesivas .mn_banner_products {
+        display: grid;
+        width: 100%;
         height: 100%;
-        gap: 0;
-        justify-content: space-between;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr);
         align-items: center;
+        justify-items: center;
     }
-
-    .banner-beneficios .beneficio {
-        width: 30%;
-    }
-
-    .banner-produtos {
-        right: 0;
-        top: 0;
-        width: 31%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: 20px;
-        top: 5px;
-        width: 67%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 8%;
-        bottom: -35px;
-        width: 38%;
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -75%;
-        width: 30%;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1099px) {
-    .BannerEtiquetaRoupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 150px;
-    }
-
-
-    .banner-fundo {
-        width: 100%;
-        height: 150px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .banner-pano,
-    .banner-nuvem-1 {
-        display: none;
-    }
-
-    .banner-titulo {
-        left: 6%;
-        width: 29%;
-        height: 100%;
+    .mn_banner_etiquetas_adesivas .mn_content_left > *, .mn_banner_etiquetas_adesivas .mn_banner_products > * { grid-area: 1 / 1; min-width: 0; }
+    .mn_banner_etiquetas_adesivas .mn_content_left img, .mn_banner_etiquetas_adesivas .mn_banner_products img { max-width: none; }
+    .mn_banner_etiquetas_adesivas .mn_left_secondary { z-index: 2; }
+    .mn_banner_etiquetas_adesivas .mn_banner_title { width: min(100%, 240px); z-index: 4; }
+    .mn_banner_etiquetas_adesivas .mn_banner_title img { width: 100%; }
+    .mn_banner_etiquetas_adesivas .mn_text_img_mobile { display: none !important; }
+    .mn_banner_etiquetas_adesivas .mn_qualities_content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         align-items: center;
+        justify-items: center;
+        width: min(100%, 320px);
+        gap: 16px;
+        padding: 0 8px;
+        z-index: 4;
+    }
+    .mn_banner_etiquetas_adesivas .mn_qualities_content > div { min-width: 0; }
+    .mn_banner_etiquetas_adesivas .mn_qualities_content img { max-width: 100%; max-height: 121px; width: auto; object-fit: contain; }
+
+    @media (width < 1300px) and (width >= 1100px) {
+        .mn_banner_etiquetas_adesivas { --banner-height: 190px; }
+        .mn_banner_etiquetas_adesivas .mn_banner_content { grid-template-columns: 20% 23% 30% 27%; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title { width: min(100%, 265px); }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content { width: min(100%, 335px); }
+    }
+    @media (width < 1100px) and (width >= 900px) {
+        .mn_banner_etiquetas_adesivas { --banner-height: 235px; }
+        .mn_banner_etiquetas_adesivas .mn_banner_content { grid-template-columns: 8% 27% 35% 30%; }
+        .mn_banner_etiquetas_adesivas .mn_left_secondary { display: none !important; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title { width: min(100%, 265px); }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content { width: min(100%, 350px); }
+    }
+    @media (width < 900px) {
+        .mn_banner_etiquetas_adesivas .mn_banner_content {
+            grid-template-columns: 8% 50% 42%;
+            grid-template-rows: 1fr 1fr;
+        }
+        .mn_banner_etiquetas_adesivas .mn_content_left { grid-column: 1; grid-row: 1 / span 2; opacity: 0.55; }
+        .mn_banner_etiquetas_adesivas .mn_left_secondary { display: none !important; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title { grid-column: 2; grid-row: 1; width: min(100%, 235px); align-self: end; }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content {
+            grid-column: 2;
+            grid-row: 2;
+            width: min(100%, 300px);
+            gap: 24px;
+            padding: 6px 8px;
+        }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content img { max-height: 100px; }
+        .mn_banner_etiquetas_adesivas .mn_banner_products { grid-column: 3; grid-row: 1 / span 2; }
+    }
+    @media (width < 900px) and (width >= 700px) {
+        .mn_banner_etiquetas_adesivas { --banner-height: 233px; width: 100vw; }
+    }
+    @media (width < 700px) and (width >= 500px) {
+        .mn_banner_etiquetas_adesivas { --banner-height: 222px; width: 100vw; }
+        .mn_banner_etiquetas_adesivas .mn_banner_content { grid-template-columns: 3% 57% 40%; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title { width: min(100%, 212px); }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content { width: min(100%, 276px); gap: 20px; }
+        .mn_banner_etiquetas_adesivas .mn_content_left { visibility: hidden; }
+    }
+    @media (width < 500px) {
+        .mn_banner_etiquetas_adesivas { --banner-height: 205px; width: 100vw; }
+        .mn_banner_etiquetas_adesivas .mn_banner_content { grid-template-columns: 0 minmax(0, 1fr) 0; grid-template-rows: 103px 102px; }
+        .mn_banner_etiquetas_adesivas .mn_content_left, .mn_banner_etiquetas_adesivas .mn_banner_products { display: none; }
+        .mn_banner_etiquetas_adesivas .mn_text_img_desktop { display: none !important; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title .mn_text_img_mobile { display: block !important; }
+        .mn_banner_etiquetas_adesivas .mn_banner_title { width: min(235px, calc(100vw - 32px)); align-self: center; }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content { width: min(256px, 100%); gap: 24px; padding: 4px 12px; }
+        .mn_banner_etiquetas_adesivas .mn_qualities_content img { max-height: 90px; }
     }
 
-    .banner-titulo img {
-        width: 100%;
+    .mn_banner_etiquetas_adesivas .mn_product_pencil { width: 13%; transform: translate(-105%, -8%) rotate(-18deg); z-index: 3; }
+    .mn_banner_etiquetas_adesivas .mn_product_calculator { width: 52%; transform: translate(-20%, 32%) rotate(-12deg); z-index: 2; }
+    .mn_banner_etiquetas_adesivas .mn_product_lunchbox { width: 74%; transform: translate(32%, 3%) rotate(8deg); z-index: 1; }
+    .mn_banner_etiquetas_adesivas .mn_left_pencil_case { width: 110%; transform: translate(-20%, 26%) rotate(-15deg); }
+    .mn_banner_etiquetas_adesivas .mn_left_notebook { width: 61%; transform: translate(7%, -26%) rotate(-12deg); }
+    @media (width < 900px) {
+        .mn_banner_etiquetas_adesivas .mn_product_pencil { width: 11%; transform: translate(-130%, -5%) rotate(-18deg); }
+        .mn_banner_etiquetas_adesivas .mn_product_calculator { width: 56%; transform: translate(-15%, 36%) rotate(-12deg); }
+        .mn_banner_etiquetas_adesivas .mn_product_lunchbox { width: 82%; transform: translate(27%, 0) rotate(8deg); }
     }
-
-    .banner-beneficios {
-        left: 37%;
-        width: 39%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
-    }
-
-    .banner-beneficios .beneficio {
-        width: 28%;
-    }
-
-    .banner-produtos {
-        right: 0;
-        width: 30%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: -5px;
-        top: 5px;
-        width: 82%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 2%;
-        bottom: -30px;
-        width: 45%;
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -55%;
-        width: 30%;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 899px) {
-
-    .BannerEtiquetaRoupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 220px;
-    }
-
-
-    .banner-fundo {
-        width: 100%;
-        height: 220px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .banner-pano,
-    .banner-nuvem-1 {
-        display: none;
-    }
-
-    .banner-titulo {
-        left: 8%;
-        top: 8%;
-        width: 38%;
-        height: auto;
-        display: block;
-    }
-
-    .banner-titulo img {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-beneficios {
-        left: 7%;
-        top: 52%;
-        width: 52%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 0;
-    }
-
-    .banner-beneficios .beneficio {
-        width: 29%;
-    }
-
-    .banner-beneficios .beneficio img {
-        width: 100%;
-        height: auto;
-    }
-
-    .banner-produtos {
-        right: 0;
-        top: 0;
-        width: 48%;
-        height: 100%;
-    }
-
-    .produto-camisa {
-        right: -5px;
-        top: 25px;
-        width: 100%;
-    }
-
-    .banner-produtos .produto-meia {
-        right: 3%;
-        bottom: -5px;
-        width: 47%;
-        transform: rotate(-13deg);
-    }
-
-    .banner-nuvem-2 {
-        right: 0;
-        top: -20%;
-        width: 35%;
-    }
-}
-
-@media (max-width: 699px) {
-
-    .BannerEtiquetaRoupa {
-        width: min(1386px, 99vw);
-    }
-
-    .banner-etiquetas {
-        width: 100%;
-        height: 220px;
-    }
-
-    .banner-fundo {
-        width: 100%;
-        height: 220px !important;
-        object-fit: cover;
-        object-position: center;
-    }
-}
+    @media (width < 700px) { .mn_banner_etiquetas_adesivas .mn_product_pencil { display: none; } }
 
 </style>
 
 <script>
-    document.querySelectorAll(".row").forEach(function(row) {
-        const title = row.querySelector(".title-header");
-
-        if (title && title.textContent.trim() === "ETIQUETAS ADESIVAS") {
-            row.style.display = "none";
+    document.querySelectorAll('.row').forEach(function (row) {
+        const title = row.querySelector('.title-header');
+        if (title && title.textContent.trim() === 'ETIQUETAS ADESIVAS') {
+            row.style.display = 'none';
         }
     });
 </script>

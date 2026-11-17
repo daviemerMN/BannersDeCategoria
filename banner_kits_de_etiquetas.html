@@ -1,0 +1,169 @@
+<div class="mn_banner_labels mn_banner_kits_de_etiquetas">
+    <!-- Fundo -->
+    <img class="mn_banner_background" src="/wp-content/uploads/2026/11/banner_kits_fundo_2026.png" alt="" />
+    <!-- Conteudo principal -->
+    <div class="mn_banner_content">
+        <div class="mn_content_left" aria-hidden="true">
+            <img class="mn_left_shoes mn_left_primary" src="/wp-content/uploads/2026/11/banner_kits_tenis_2026.png" alt="" />
+            <img class="mn_left_notebooks mn_left_secondary" src="/wp-content/uploads/2026/11/banner_kits_cadernos_2026.png" alt="" />
+        </div>
+        <!-- Titulo para desktop e celular -->
+        <div class="mn_banner_title">
+            <img class="mn_text_img_desktop" src="/wp-content/uploads/2026/11/banner_kits_texto-esquerda_2026.png" alt="Kits de Etiquetas" />
+            <img class="mn_text_img_mobile" src="/wp-content/uploads/2026/11/banner_kits_texto-centro_2026.png" alt="Kits de Etiquetas" />
+        </div>
+        <!-- Qualidades -->
+        <div class="mn_qualities_content">
+            <div class="mn_quality_1"><img src="/wp-content/uploads/2026/11/banner_tinta_2026.png" alt="" /></div>
+            <div class="mn_quality_2"><img src="/wp-content/uploads/2026/11/banner_cores_2026.png" alt="" /></div>
+            <div class="mn_quality_3"><img src="/wp-content/uploads/2026/11/banner_a-prova-dagua_2026.png" alt="" /></div>
+        </div>
+        <!-- Produtos sobrepostos em Grid -->
+        <div class="mn_banner_products" aria-hidden="true">
+            <img class="mn_product_shirt" src="/wp-content/uploads/2026/11/banner_kits_camiseta_2026.png" alt="" />
+            <img class="mn_product_cup" src="/wp-content/uploads/2026/11/banner_kits_copo_2026.png" alt="" />
+            <img class="mn_product_color_glue" src="/wp-content/uploads/2026/11/banner_kits_cola-colorida_2026.png" alt="" />
+        </div>
+    </div>
+</div>
+
+<style>
+
+    #content { padding-top: 0 !important; }
+
+    /* Mesma organizacao do banner de roupas: fundo e conteudo sobrepostos em Grid. */
+    .mn_banner_kits_de_etiquetas {
+        --banner-height: 175px;
+        position: relative;
+        display: grid;
+        width: min(1386px, 100vw);
+        max-width: none;
+        height: var(--banner-height);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        isolation: isolate;
+    }
+    .mn_banner_kits_de_etiquetas *, .mn_banner_kits_de_etiquetas *::before, .mn_banner_kits_de_etiquetas *::after {
+        box-sizing: border-box;
+    }
+    .mn_banner_kits_de_etiquetas img { display: block; height: auto; }
+    .mn_banner_kits_de_etiquetas .mn_banner_background, .mn_banner_kits_de_etiquetas .mn_banner_content { grid-area: 1 / 1; min-width: 0; }
+    .mn_banner_kits_de_etiquetas .mn_banner_background {
+        width: 100%;
+        height: var(--banner-height) !important;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+    .mn_banner_kits_de_etiquetas .mn_banner_content {
+        display: grid;
+        grid-template-columns: 24% 18% 28% 30%;
+        grid-template-rows: var(--banner-height);
+        align-items: center;
+        justify-items: center;
+        height: var(--banner-height);
+    }
+    .mn_banner_kits_de_etiquetas .mn_content_left, .mn_banner_kits_de_etiquetas .mn_banner_products {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+    .mn_banner_kits_de_etiquetas .mn_content_left > *, .mn_banner_kits_de_etiquetas .mn_banner_products > * { grid-area: 1 / 1; min-width: 0; }
+    .mn_banner_kits_de_etiquetas .mn_content_left img, .mn_banner_kits_de_etiquetas .mn_banner_products img { max-width: none; }
+    .mn_banner_kits_de_etiquetas .mn_left_secondary { z-index: 2; }
+    .mn_banner_kits_de_etiquetas .mn_banner_title { width: min(100%, 240px); z-index: 4; }
+    .mn_banner_kits_de_etiquetas .mn_banner_title img { width: 100%; }
+    .mn_banner_kits_de_etiquetas .mn_text_img_mobile { display: none !important; }
+    .mn_banner_kits_de_etiquetas .mn_qualities_content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: center;
+        justify-items: center;
+        width: min(100%, 320px);
+        gap: 16px;
+        padding: 0 8px;
+        z-index: 4;
+    }
+    .mn_banner_kits_de_etiquetas .mn_qualities_content > div { min-width: 0; }
+    .mn_banner_kits_de_etiquetas .mn_qualities_content img { max-width: 100%; max-height: 121px; width: auto; object-fit: contain; }
+
+    @media (width < 1300px) and (width >= 1100px) {
+        .mn_banner_kits_de_etiquetas { --banner-height: 190px; }
+        .mn_banner_kits_de_etiquetas .mn_banner_content { grid-template-columns: 20% 23% 30% 27%; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title { width: min(100%, 265px); }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content { width: min(100%, 335px); }
+    }
+    @media (width < 1100px) and (width >= 900px) {
+        .mn_banner_kits_de_etiquetas { --banner-height: 235px; }
+        .mn_banner_kits_de_etiquetas .mn_banner_content { grid-template-columns: 8% 27% 35% 30%; }
+        .mn_banner_kits_de_etiquetas .mn_left_secondary { display: none !important; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title { width: min(100%, 265px); }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content { width: min(100%, 350px); }
+    }
+    @media (width < 900px) {
+        .mn_banner_kits_de_etiquetas .mn_banner_content {
+            grid-template-columns: 8% 50% 42%;
+            grid-template-rows: 1fr 1fr;
+        }
+        .mn_banner_kits_de_etiquetas .mn_content_left { grid-column: 1; grid-row: 1 / span 2; opacity: 0.55; }
+        .mn_banner_kits_de_etiquetas .mn_left_secondary { display: none !important; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title { grid-column: 2; grid-row: 1; width: min(100%, 235px); align-self: end; }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content {
+            grid-column: 2;
+            grid-row: 2;
+            width: min(100%, 300px);
+            gap: 24px;
+            padding: 6px 8px;
+        }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content img { max-height: 100px; }
+        .mn_banner_kits_de_etiquetas .mn_banner_products { grid-column: 3; grid-row: 1 / span 2; }
+    }
+    @media (width < 900px) and (width >= 700px) {
+        .mn_banner_kits_de_etiquetas { --banner-height: 233px; width: 100vw; }
+    }
+    @media (width < 700px) and (width >= 500px) {
+        .mn_banner_kits_de_etiquetas { --banner-height: 222px; width: 100vw; }
+        .mn_banner_kits_de_etiquetas .mn_banner_content { grid-template-columns: 3% 57% 40%; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title { width: min(100%, 212px); }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content { width: min(100%, 276px); gap: 20px; }
+        .mn_banner_kits_de_etiquetas .mn_content_left { visibility: hidden; }
+    }
+    @media (width < 500px) {
+        .mn_banner_kits_de_etiquetas { --banner-height: 205px; width: 100vw; }
+        .mn_banner_kits_de_etiquetas .mn_banner_content { grid-template-columns: 0 minmax(0, 1fr) 0; grid-template-rows: 103px 102px; }
+        .mn_banner_kits_de_etiquetas .mn_content_left, .mn_banner_kits_de_etiquetas .mn_banner_products { display: none; }
+        .mn_banner_kits_de_etiquetas .mn_text_img_desktop { display: none !important; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title .mn_text_img_mobile { display: block !important; }
+        .mn_banner_kits_de_etiquetas .mn_banner_title { width: min(235px, calc(100vw - 32px)); align-self: center; }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content { width: min(256px, 100%); gap: 24px; padding: 4px 12px; }
+        .mn_banner_kits_de_etiquetas .mn_qualities_content img { max-height: 90px; }
+    }
+
+    .mn_banner_kits_de_etiquetas .mn_product_shirt { width: 90%; transform: translate(-3%, -17%) rotate(-8deg); z-index: 1; }
+    .mn_banner_kits_de_etiquetas .mn_product_cup { width: 31%; transform: translate(80%, 18%) rotate(12deg); z-index: 3; }
+    .mn_banner_kits_de_etiquetas .mn_product_color_glue { width: 63%; transform: translate(-20%, 95%) rotate(-10deg); z-index: 2; }
+    .mn_banner_kits_de_etiquetas .mn_left_shoes { width: 86%; transform: translate(-26%, 22%) rotate(-14deg); }
+    .mn_banner_kits_de_etiquetas .mn_left_notebooks { width: 64%; transform: translate(10%, -22%) rotate(-10deg); }
+    @media (width < 900px) {
+        .mn_banner_kits_de_etiquetas .mn_product_shirt { width: 100%; transform: translate(0, -20%) rotate(-8deg); }
+        .mn_banner_kits_de_etiquetas .mn_product_cup { width: 35%; transform: translate(75%, 22%) rotate(12deg); }
+        .mn_banner_kits_de_etiquetas .mn_product_color_glue { width: 70%; transform: translate(-10%, 100%) rotate(-10deg); }
+    }
+    @media (width < 700px) { .mn_banner_kits_de_etiquetas .mn_product_color_glue { display: none; } }
+
+</style>
+
+<script>
+    document.querySelectorAll('.row').forEach(function (row) {
+        const title = row.querySelector('.title-header');
+        if (title && title.textContent.trim() === 'KITS DE ETIQUETAS') {
+            row.style.display = 'none';
+        }
+    });
+</script>
